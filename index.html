@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -59,23 +63,8 @@
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
 						<h1 class="mb-4 mt-3">I'm <span>Koushik Sridhar</span></h1>
-						<h2 class="mb-4 typing">  </h2>
+						<h2 class="mb-4" style="color: ;"> <span id="typed"></span></h2>
 						
-						<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-						<script type="text/javascript">
-							var type = new Typed(".typing", {
-								strings: [
-									"Problem-Solver",
-									"Computer Scientist",
-									"Data Scientist",
-									"Researcher"
-								],
-								typeSpeed: 50,
-								backSpeed: 50,
-								loop: true
-							});
-						</script>
-
 			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
@@ -694,6 +683,18 @@
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+<!--========Typing Animation on Enter STARTS===========-->
+  <script>
+	var typed = new Typed('#typed', {
+						  strings:["Problem-Solver","Computer Scientist","Avid Learner", "Full Stack Developer"],
+						  loop:true,
+						  typeSpeed:40,
+						  backSpeed:20,
+						  backDelay:1500,
+						  });
+	</script>
+<!--========Typing Animation on Enter ENDSS===========-->
 
 
   <script src="js/jquery.min.js"></script>
